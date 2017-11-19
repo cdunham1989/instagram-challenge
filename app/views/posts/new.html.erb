@@ -1,0 +1,16 @@
+<h1>New Post</h1>
+
+<%= form_with scope: :post, url: posts_path, local: true do |form| %>
+  <p>
+    <%= form.label :Caption %><br>
+    <%= form.text_field :caption %>
+  </p>
+
+  <p>
+    <!-- space to insert picture here -->
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
